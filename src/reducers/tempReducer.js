@@ -1,6 +1,6 @@
 // Evaluate all actions in Reducers
 
-import { fetch , fetch2 } from '../actions/types';
+import { fetch1 , fetch2 } from '../actions/types';
 
 const initialState = {
 	items : [],
@@ -9,7 +9,9 @@ const initialState = {
 
 export default function (state = initialState, action){
 	switch (action.type){
-		case fetch : return {
+		case fetch1 : 
+			console.log('Reducer Dispatched')
+			return {
 			...state, 
 			items :action.result
 		}

@@ -3,5 +3,12 @@
 import { fetch , fetch2 } from '../actions/temp';
 
 const initialState = {
-	items : []
+	items : [],
+	item : {}
+}
+
+export default function (state = initialState, action){
+	switch (action.type){
+		default : return state;
+	}
 }
